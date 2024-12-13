@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d1d1d1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.calculator {
+  background: beige;
+  width: 300px;
+  border-radius: 10px;
+  border: 3px solid #3f4132;
+  box-shadow: 7px 7px #3f4132;
+  overflow: hidden;
+}
+.display {
+  background: beige;
+  padding: 30px 20px;
+  text-align: right;
+  font-size: 2em;
+  font-weight: bold;
+
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.display .operations {
+  font-size: 0.6em;
+  color: #888;
+  font-weight: normal;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-style: italic;
+}
+.buttons {
+  background: #89f1c1;
+  padding: 10px;
+  padding-top: 45px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.buttons button {
+  padding: 15px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #333;
+  border: 2px solid #3f4132;
+  box-shadow: 2px 2px #3f4132;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.buttons button:hover {
+  background: #89f1c1;
+}
+#equals-btn {
+  grid-row: span 2;
+}
+#zero-btn {
+  grid-column: span 2;
+}
